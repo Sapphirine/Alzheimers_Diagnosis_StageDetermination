@@ -41,9 +41,9 @@ trainset = splits[0]
 testset = splits[1]
 
 #Input layer (8 features) and output layer (2 classes)
-# layers = [66, 128, 256, 64, 32, 2]
-# layers = [72, 128, 256, 64, 32, 2]
-layers = [14, 128, 256, 64, 32, 2]
+# layers = [66, 128, 512, 256, 100, 2]
+# layers = [72, 128, 512, 256, 100, 2]
+layers = [14, 128, 512, 256, 100, 2]
 
 trainer = MultilayerPerceptronClassifier(maxIter=10000, layers=layers, blockSize=128)
 model = trainer.fit( trainset )
